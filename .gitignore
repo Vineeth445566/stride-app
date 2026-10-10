@@ -1,0 +1,8 @@
+# Build outputs
+proj/build/
+# macOS
+.DS_Store
+# Gradle
+.gradle/
+# Local properties (has SDK paths)
+proj/android/local.properties

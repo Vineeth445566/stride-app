@@ -6,3 +6,9 @@ proj/build/
 .gradle/
 # Local properties (has SDK paths)
 proj/android/local.properties
+# NEVER commit: signing keys, build workarounds, internal notes
+release/
+build-infra/
+staging/
+BUILD-INFRA-STATE.md
+stride-mac-build-kit.zip

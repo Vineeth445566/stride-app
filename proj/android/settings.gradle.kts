@@ -11,24 +11,9 @@ pluginManagement {
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
-        // Local caching proxy for sandboxed builds (remove for normal builds)
-        maven("http://127.0.0.1:8890") {
-            isAllowInsecureProtocol = true
-        }
         google()
         mavenCentral()
         gradlePluginPortal()
-    }
-}
-
-// Local caching proxy for project dependencies (sandboxed builds only)
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        // Local caching proxy for sandboxed builds (remove for normal builds)
-        maven("http://127.0.0.1:8890") {
-            isAllowInsecureProtocol = true
-        }
     }
 }
 
